@@ -1,0 +1,119 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+}
+
+.upper-contact {
+    position: fixed;
+    background-color: #14aab6;
+    width: 100%;
+    z-index: 100;
+}
+
+.upper-contact a {
+    color: #fff;
+    padding-left: 4rem;
+    font-weight: 400;
+    font-variant: normal;
+    font-feature-settings: normal;
+    line-height: 1;
+}
+
+.top-nav {
+    overflow: hidden;
+    background-color: #fff;
+    width: 100%;
+    font-size: 10px;
+    font-weight: 500;
+    position: fixed;
+    margin-top: 1.7%;
+    z-index: 100;
+    padding-right: 5rem;
+}
+
+.top-nav a {
+    color: #666;
+    text-align: center;
+    padding: 6px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    transition: .3s;
+}
+
+.top-nav a:hover {
+    text-decoration: none;
+    color: rgb(131, 131, 131);
+    transition: .2s;
+}
+
+.logo-container {
+    transition: all .4s ease-in-out;
+    margin-bottom: 0;
+    max-height: 54%;
+    display: inline-block;
+    float: none;
+    vertical-align: middle;
+    -webkit-transform: translateZ(0);
+}
+
+.logo {
+    width: 60%;
+    margin-left: 20%;
+}
+
+
+.separator {
+    background-color: #14aab6;
+    width: 100%;
+    height: 10rem;
+}
+section{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(20, 170, 182, 0.3);
+    padding: 0 10%;
+    padding-top: 20%;
+    padding-bottom: 15%;
+    margin-top: -60%;
+
+}
+
+.section-img {
+    width: 100%;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.section-header {
+    font-weight: 700;
+    font-size: 70px;
+    line-height: 1.5em;
+    color: #fff;
+}
+
+.section-caption {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 1.8em;
+    align-items: center;
+    color: #fff;
+}
+
+.contact-btn {
+    color: #3550a0 !important;
+    border-width: 10px !important;
+    border-color: rgba(210, 159, 104, 0);
+    border-radius: 100px;
+    padding: 0 10px;
+    font-weight: 900 !important;
+    background-color: #ffffff;
+}
+
+.keylearning{
+    width: 100%;
+}
+
+.kl-img {
+    max-width: 100%;
+}
