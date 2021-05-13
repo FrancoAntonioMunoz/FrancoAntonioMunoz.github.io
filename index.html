@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="shortcut icon" type="image/x-icon" href="./img/cropped-favicon.png" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
 </head>
 
 <body>
@@ -18,7 +19,7 @@
         <div class="logo-container"><img class="logo" src="./img/logo_color_pequeno.png" alt=""></div>
         <a href="#">Quienes Somos</a>
         <a href="#">KEY Learning</a>
-        <a href="#">ACCESO PLATAFORMA KL</a>
+        <a href="https://keylearning.klearning.cl/">ACCESO PLATAFORMA KL</a>
         <a href="#">Servicios Complementarios</a>
     </div>
     <div class="separator">a</div>
@@ -114,7 +115,7 @@
                 </ul>
             </div>
         </div>
-        <div class="main-info">
+        <div class="main-info mb-5">
             <div class="main-info-content">
                 <h3 class="info-title">Funcionalidades (integradas y automatizadas)</h3>
                 <ul>
@@ -153,13 +154,47 @@
                 <img class="mt-4" src="./img/malla-curricular.png" alt="">
             </div>
         </div>
+        <div class="contact">
+            <div class="contact-box">
+                <div class="contact-card">
+                    <h2 class="contact-label">Contáctanos</h2>
+                    <h4><strong>KEY LEARNING SPA</strong></h4>
+                    <div class="contact-items">
+                        <i class="bi bi-telephone-fill mr-3"></i>
+                        <p>+56(2) 2321 3350</p>
+                    </div>
+                    <div class="contact-items">
+                        <i class="bi bi-phone-fill mr-3"></i>
+                        <p>+56(9) 7708 1206</p>
+                    </div>
+                    <div class="contact-items">
+                        <i class="bi bi-geo-alt-fill mr-3"></i>
+                        <p class="w-50">Av. Américo Vespucio Sur #107, of. 207, Las Condes, Santiago.</p>
+                    </div>
+                    <div class="contact-items">
+                        <i class="bi bi-envelope-fill mr-3"></i>
+                        <p>contacto@klearning.cl</p>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form action="">
+                        <div class="contact-form-header">
+                            <input type="text" id="email" placeholder="Correo electrónico" /><br />
+                            <input class="ml-1" type="text" id="subject" placeholder="Asunto" /><br />
+                        </div>
+                        <textarea id="body" placeholder="Mensaje"></textarea><br />
+                        <button type="button" id="generate">Enviar</button><br />
+                        <textarea id="output">Output</textarea>
+                    </form>
+                </div>
+            </div>
+        </div>
     </div>
     <footer>
         <div class="footer-container">
             <div class="footer-widgets">
-                
                 <div class="footer-contact-text">
-                    <img width="300" height="72" src="./img/logo_blanco_pequenno.png" alt="">
+                    <img class="kl-white-logo" width="300" height="72" src="./img/logo_blanco_pequenno.png" alt="">
                     <h6>Av. Américo Vespucio Sur #107, of. 207, Las Condes, Santiago.</h6>
                     <h6>
                         +56(2) 2321 3350 / +56(9) 7708 1206
@@ -167,10 +202,10 @@
                     <h6>contacto@klearning.cl</h6>
                 </div>
                 <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3330.29149792493!2d-70.58645458509271!3d-33.41564390311228!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662cf184f4b3fdd%3A0x29ef29eff8bdb9b5!2sAv.%20Am%C3%A9rico%20Vespucio%20Sur%20107%2C%20Las%20Condes%2C%20Regi%C3%B3n%20Metropolitana!5e0!3m2!1ses!2scl!4v1616698714194!5m2!1ses!2scl"
-                width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3330.29149792493!2d-70.58645458509271!3d-33.41564390311228!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662cf184f4b3fdd%3A0x29ef29eff8bdb9b5!2sAv.%20Am%C3%A9rico%20Vespucio%20Sur%20107%2C%20Las%20Condes%2C%20Regi%C3%B3n%20Metropolitana!5e0!3m2!1ses!2scl!4v1616698714194!5m2!1ses!2scl"
+                    width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
                 <div class="footer-nav">
-                    <h6>Sitio</h6>
+                    <h6 class="ml-4">Sitio</h6>
                     <ul>
                         <li>
                             <a href="">Quiénes Somos</a>
@@ -184,19 +219,24 @@
                         <li>
                             <a href="">Servicios Complementarios</a>
                             <ul>
-                                <li>Asesorías</li>
-                                <li>Capacitación</li>
+                                <li>
+                                    <a href="">Asesorías</a>
+                                </li>
+                                <li>
+                                    <a href="">Capacitación</a>
+                                </li>
                             </ul>
                         </li>
                     </ul>
                 </div>
             </div>
         </div>
-        <div class="footer-bottom">
-
-        </div>
+        <!-- <div class="footer-bottom">
+            <p class="copyright">© 2021 KEYlearning | Todos los Derechos Reservados</p>
+        </div> -->
     </footer>
     <script src="/js/app.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js%22%3E"></script>
 </body>
 
 </html>

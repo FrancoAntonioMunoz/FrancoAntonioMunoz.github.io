@@ -7,7 +7,7 @@ body {
     position: fixed;
     background-color: #14aab6;
     width: 100%;
-    height: 20%;
+    height: 5%;
     padding-bottom: 1rem;
     z-index: 100;
 }
@@ -32,6 +32,7 @@ body {
     margin-top: 1.8%;
     z-index: 100;
     padding-right: 5rem;
+    box-shadow: 0px 10px 10px -10px rgb(0 0 0 / 20%);
 }
 
 .top-nav a {
@@ -47,6 +48,7 @@ body {
 .top-nav a:hover {
     text-decoration: none;
     color: rgb(131, 131, 131);
+    border-bottom: 3px solid #14aab6 !important;
     transition: .2s;
 }
 
@@ -69,7 +71,7 @@ body {
 .separator {
     background-color: #14aab6;
     width: 100%;
-    height: 10rem;
+    height: 7rem;
 }
 
 section {
@@ -94,6 +96,11 @@ section {
     font-size: 70px;
     line-height: 1.5em;
     color: #fff;
+    animation: fadeIn 2s;
+    -webkit-animation: fadeIn 2s;
+    -moz-animation: fadeIn 2s;
+    -o-animation: fadeIn 2s;
+    -ms-animation: fadeIn 2s;
 }
 
 .section-caption {
@@ -102,6 +109,11 @@ section {
     line-height: 1.8em;
     align-items: center;
     color: #fff;
+    animation: fadeIn 4s;
+    -webkit-animation: fadeIn 4s;
+    -moz-animation: fadeIn 4s;
+    -o-animation: fadeIn 4s;
+    -ms-animation: fadeIn 4s;
 }
 
 .contact-btn {
@@ -112,6 +124,17 @@ section {
     padding: 0 10px;
     font-weight: 900 !important;
     background-color: #ffffff;
+    animation: fadeIn 6s;
+    -webkit-animation: fadeIn 6s;
+    -moz-animation: fadeIn 6s;
+    -o-animation: fadeIn 6s;
+    -ms-animation: fadeIn 6s;
+}
+
+.contact-btn:hover {
+    color: #fff !important;
+    background-color: #3550a0;
+    transition: .4s;
 }
 
 .keylearning {
@@ -125,6 +148,56 @@ section {
 .main-info {
     display: flex;
     padding: 3% 10%;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@-moz-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@-o-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@-ms-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
 }
 
 .info-title {
@@ -150,6 +223,105 @@ section {
     margin-top: 20%;
 }
 
+.contact {
+    width: 100%;
+    padding: 10% 10%;
+    background-image: url("../img/cyber-security-17-1-1024x630.png"), radial-gradient(circle at top right, #14aab6 0%, #006e9a 100%) !important;
+}
+
+.contact-box {
+    display: flex;
+    height: 100%;
+    box-shadow: 0px 40px 60px -8px rgb(0 0 0 / 30%);
+    margin-top: -18%;
+    border-radius: 10px;
+}
+
+.contact-card {
+    width: 40%;
+    background: transparent;
+    padding-top: 7%;
+    padding-left: 8%;
+    background: #fff;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+.contact-items {
+    display: flex;
+    font-size: 19px;
+}
+.contact-items i{
+    color: #006e9a !important;
+}
+
+.contact-label {
+    font-weight: 700;
+    font-size: 44px;
+    color: #006e9a !important;
+}
+
+.contact-form {
+    background-size: contain;
+    background-position: bottom left;
+    background-image: url(../img/cyber-security-010-1.png);
+    background-color: #14aab6;
+    background-repeat: no-repeat;
+    width: 60%;
+    padding-top: 70px;
+    padding-right: 40px;
+    padding-bottom: 60px;
+    padding-left: 140px;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.contact-form-header {
+    display: flex;
+    padding-right: 1%;
+}
+
+.contact-form-header input {
+    width: 100%;
+}
+
+input[type=text] {
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+textarea {
+    width: 99%;
+    min-height: 150px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+#generate {
+    color: #ffffff !important;
+    border-width: 0px !important;
+    border-radius: 25px;
+    background-color: #006e9a;
+    font-size: 20px;
+    padding: 6px 16px;
+    margin-bottom: 1%;
+    margin-right: 1%;
+    float: right;
+}
+
+#generate:hover{
+    background-color: #037faf;
+    transition: .2s;
+}
+
 footer {
     background-color: #222;
 }
@@ -157,24 +329,73 @@ footer {
 .footer-container {
     text-align: left;
     position: relative;
-    padding-top: 4%;
+    padding: 4% 0;
     width: 80%;
     max-width: 1080px;
     margin: auto;
 }
-.footer-widgets{
+
+.footer-widgets {
     display: flex;
 }
-.footer-contact-text{
+
+.kl-white-logo {
+    margin-top: -5%;
+    margin-bottom: 7%;
+}
+
+.footer-contact-text {
     width: 300px;
     color: #14aab6;
+    margin-top: 1%;
+    margin-right: 5.5%;
 }
-h6{
-    font-size: 18px;
+
+h6 {
+    color: #14aab6;
+    font-size: 20px;
     padding-bottom: 10px;
     line-height: 1em;
     font-weight: 500;
 }
-.footer-nav{
+
+.footer-nav {
     margin-left: 1%;
+}
+
+li a {
+    color: #fff;
+    padding: 1px 5px;
+    border-radius: 10px;
+    transition: .15s;
+}
+
+li a:hover {
+    text-decoration: none;
+    color: #fff;
+    background-color: rgb(46, 46, 46);
+    transition: .15s;
+}
+
+.footer-nav ul {
+    list-style: none;
+}
+
+.footer-nav ul li::before {
+    color: #14aab6 !important;
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+    content: "\2022";
+}
+
+.footer-bottom {
+    background-color: #1f1f1f;
+    padding: 15px 0 5px;
+}
+
+.copyright {
+    text-align: center;
+    color: #666;
 }
