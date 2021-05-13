@@ -7,18 +7,25 @@ body {
     position: fixed;
     background-color: #14aab6;
     width: 100%;
+    padding-left: 8%;
     height: 5%;
     padding-bottom: 1rem;
     z-index: 100;
 }
+.upper-contact i{
+    color: #fff;
+}
 
 .upper-contact a {
     color: #fff;
-    padding-left: 6rem;
     font-weight: 400;
     font-variant: normal;
     font-feature-settings: normal;
     line-height: 1;
+}
+.upper-contact a:hover{
+    color: #fff;
+    font-weight: 500;
 }
 
 .top-nav {
