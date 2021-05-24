@@ -1,27 +1,19 @@
-function generate() {
-    var email = $('#email').val();
-    var subject = $('#subject').val();
-    var body = $('#body').val();
-  
-    var mailto = 'mailto:' + email;
-    var params = {};
-    if (subject) {
-      params.subject = subject;
-    }
-    if (body) {
-      params.body = body;
-    }
-    if (params) {
-      mailto += '?' + $.param(params);
-    }
-  
-    var $output = $('#output');
-    $output.val(mailto);
-    $output.focus();
-    $output.select();
-    document.execCommand('copy');
+function generate() { 
+  var subject = document.getElementById("subject").value
+  var body = document.getElementById("body").value
+
+  var mailto = 'mailto:contacto@klearning.cl';
+  if (subject) {
+    mailto += '?subject='+subject;
   }
-  
-  $(document).ready(function() {
-    $('#generate').on('click', generate);
-  });
+  if (body) {
+    mailto += '&body='+body;
+    
+  }
+  window.open(mailto)
+}
+
+window.onload = function(){
+  var btn = document.getElementById("generate");
+  btn.onclick = generate;
+}
