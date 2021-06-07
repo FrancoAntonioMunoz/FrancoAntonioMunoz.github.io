@@ -319,7 +319,8 @@ section {
 .contact-card {
     width: 40%;
     background: transparent;
-    padding-top: 7%;
+    padding-top: 4%;
+    padding-bottom: 7% !important;
     padding-left: 8%;
     background: #fff;
     border-bottom-left-radius: 10px;
